@@ -1,0 +1,70 @@
+.ratesWrapper {
+
+}
+
+.rates {
+  background: $white;
+  box-shadow: 0 0 30px 0 rgba(0,0,0,0.10);
+  border-radius: 5px;
+}
+
+
+
+.ratesHeader {
+  display: flex;
+}
+
+.ratesHeaderItem {
+  position: relative;
+  flex-basis: 190px;
+  flex-shrink: 0;
+
+  &--image {
+    flex-basis: calc(100% - 760px);
+  }
+}
+
+.ratesHeaderItem__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.ratesHeaderItem {
+  padding: 20px;
+  text-align: center;
+  border-left: 1px solid #DFDFDF;
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    border-left: 0;
+  }
+}
+.ratesHeaderItem__title {
+  margin-bottom: 78px;
+  font: 16px/25px $sans-semibold;
+}
+
+.ratesHeaderPrice {
+  margin-bottom: 72px;
+}
+
+.ratesHeaderPrice__amount {
+  font: 26px/32px $sans-bold;
+}
+
+.ratesHeaderPrice__currency {
+  font: 26px/32px $sans-regular;
+  color: #B1B1B1;
+}
+
+.ratesHeaderPrice__info {
+  font: 12px/18px $sans-semibold;
+  text-transform: uppercase;
+  color: #B1B1B1;
+}
+
+.ratesHeaderItem__button {
+  width: 100%;
+}
