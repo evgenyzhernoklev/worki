@@ -1,1 +1,5 @@
 # worki
+
+npm install
+
+gulp
