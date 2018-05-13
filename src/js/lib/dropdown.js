@@ -15,8 +15,8 @@ class Dropdown {
 
     if (target.classList.contains('js-dropdown-item-link')) {
       e.preventDefault();
-      let parent = target.closest('.js-dropdown-item');
-      let content = parent.querySelector('.js-dropdown-item-content');
+      let parent = target.closest('.js-dropdown-item'),
+          content = parent.querySelector('.js-dropdown-item-content');
 
       if (target.classList.contains('is-active')) {
         this.clearDropdown();

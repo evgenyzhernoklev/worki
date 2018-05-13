@@ -12,8 +12,8 @@ class Toggle {
 
     if (target.classList.contains('js-toggle-link')) {
       e.preventDefault();
-      let parent = target.closest('.js-toggle-container');
-      let content = parent.querySelector('.js-toggle-content');
+      let parent = target.closest('.js-toggle-container'),
+          content = parent.querySelector('.js-toggle-content');
 
       if (target.classList.contains('is-active')) {
         target.classList.remove('is-active');

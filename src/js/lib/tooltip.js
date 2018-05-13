@@ -14,8 +14,8 @@ class Tooltips {
 
     if (target.classList.contains('js-tooltip-link')) {
       e.preventDefault();
-      let parent = target.closest('.js-tooltip-container');
-      let content = parent.querySelector('.js-tooltip-content');
+      let parent = target.closest('.js-tooltip-container'),
+          content = parent.querySelector('.js-tooltip-content');
 
       if (target.classList.contains('is-active')) {
         this.clearTooltips();
