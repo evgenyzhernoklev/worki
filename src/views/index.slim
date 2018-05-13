@@ -64,7 +64,7 @@ html
 									span.ratesColsPrice__currency &nbsp;&#8381;
 									p.ratesColsPrice__info в месяц
 								a.ratesColsItem__button.linkButton.linkButton--red href="#" КУПИТЬ
-						.rates__content.ratesContent.js-menu-show
+						.rates__content.ratesContent.js-menu-show.js-toggle-container
 							.ratesContent__title Основные услуги
 							.rates__cols.ratesCols
 								.ratesCols__item.ratesColsItem.ratesColsItem--special
@@ -159,7 +159,10 @@ html
 							.ratesContent__title
 								| Доступный функционал
 								.ratesContent__toggle
-							.rates__additional
+									.toggler
+										span.toggler__info Показать всё
+										span.toggler__link.js-toggle-link
+							.rates__additional.js-toggle-content
 								.rates__cols.ratesCols
 									.ratesCols__item.ratesColsItem.ratesColsItem--special
 										p.ratesColsItem__key Геолокация вакансии

@@ -1,0 +1,50 @@
+.ratesContent__toggle {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+.toggler {
+
+}
+
+.toggler__info {
+  display: inline-block;
+  margin-right: 18px;
+  font: 14px/25px $sans-regular;
+  vertical-align: middle;
+}
+
+.toggler__link {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 25px;
+  background: #DDDDDD;
+  border-radius: 80px;
+  cursor: pointer;
+  transition: background-color $transition-fast;
+  vertical-align: middle;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: $white;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.20);
+    border-radius: 50%;
+    transition: left $transition-fast;
+  }
+
+  &.is-active {
+    background: #6BBF64;
+
+    &:before {
+      left: 40px;
+    }
+  }
+}

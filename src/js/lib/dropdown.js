@@ -11,10 +11,10 @@ class Dropdown {
   }
 
   updateDropdown(e) {
-    e.preventDefault();
     let target = e.target;
 
     if (target.classList.contains('js-dropdown-item-link')) {
+      e.preventDefault();
       let parent = target.closest('.js-dropdown-item');
       let content = parent.querySelector('.js-dropdown-item-content');
 

@@ -21,5 +21,9 @@ class Viewer {
     if (document.querySelectorAll('.js-tooltip-link').length) {
       new Tooltips();
     }
+
+    if (document.querySelectorAll('.js-toggle-link').length) {
+      new Toggle();
+    }
   }
 }

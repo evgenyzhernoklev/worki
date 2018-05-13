@@ -10,10 +10,10 @@ class Tooltips {
   }
 
   toggleTooltip(e) {
-    e.preventDefault();
     let target = e.target;
 
     if (target.classList.contains('js-tooltip-link')) {
+      e.preventDefault();
       let parent = target.closest('.js-tooltip-container');
       let content = parent.querySelector('.js-tooltip-content');
 
