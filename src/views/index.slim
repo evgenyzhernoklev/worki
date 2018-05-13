@@ -2,13 +2,90 @@ doctype html
 html
 	head
 		meta charset="utf-8"
-		meta http-equiv="X-UA-Compatible" content="IE=edge"
 		meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
-		title Radar
+		title Worki
 		meta name="description" content=""
 		link rel="stylesheet" media="all" href="../css/app.css"
 	body
 		.contentWrapper
-			| Привет, Мир!
+
+			.menuContainer
+				.contentIn
+					a.menuContainer__logo href="/"
+					nav.menu
+						a.menu__link.menu__link--light href="#" Возможности
+						a.menu__link href="#" Тарифные планы
+						a.menu__link.linkButton.linkButton--gray href="#" Вход в кабинет
+				.menuScroll
+					.contentIn
+						a.menuScroll__logo href="/"
+						ul.menuBuy
+							li.menuBuy__item
+								a.menuBuy__link href="#" НАЧАТЬ
+							li.menuBuy__item
+								a.menuBuy__link href="#" КУПИТЬ КОМФОРТ
+							li.menuBuy__item
+								a.menuBuy__link href="#" КУПИТЬ БИЗНЕС
+							li.menuBuy__item
+								a.menuBuy__link href="#" КУПИТЬ VIP
+
+			.contentIn
+				section.faqWrapper
+					h2.titleMain Вопросы и ответы
+					.faq.js-dropdown-container
+						.faq__item.js-dropdown-item
+							a.faq__question.js-dropdown-item-link Кто такой пользователь?
+							.faq__answer.js-dropdown-item-content Пользователь - это рекрутер или сотрудник,  который имеет доступ к системе Worki и может размещать вакансии, а также смотреть базу резюме в соостветствии с выбранным тарифным планом,  а также пользоваться доступными для данного тарифного плана функционалом.
+						.faq__item.js-dropdown-item
+							a.faq__question.js-dropdown-item-link Какой срок жизни платного аккаунта?
+							.faq__answer.js-dropdown-item-content Какой срок жизни платного аккаунта?
+						.faq__item.js-dropdown-item
+							a.faq__question.js-dropdown-item-link Что будет если мы приобрели платный аккаунт, а лимиты на размещение или продвижение в оплаченном периоде не использовали, возможно ли остатки перенести на следующий период?
+							.faq__answer.js-dropdown-item-content Что будет если мы приобрели платный аккаунт, а лимиты на размещение или продвижение в оплаченном периоде не использовали, возможно ли остатки перенести на следующий период?
+						.faq__item.js-dropdown-item
+							a.faq__question.js-dropdown-item-link Как отказаться от продления платного аккаунта?
+							.faq__answer.js-dropdown-item-content Как отказаться от продления платного аккаунта?
+						.faq__item.js-dropdown-item
+							a.faq__question.js-dropdown-item-link Как и когда я могу перейти на более дешевый тарифный план и что будет с моими остатками?
+							.faq__answer.js-dropdown-item-content Как и когда я могу перейти на более дешевый тарифный план и что будет с моими остатками?
+						.faq__item.js-dropdown-item
+							a.faq__question.js-dropdown-item-link Как и когда я могу перейти на более дорогой тарифный план и что будет с моими остатками?
+							.faq__answer.js-dropdown-item-content Как и когда я могу перейти на более дорогой тарифный план и что будет с моими остатками?
+						.faq__item.js-dropdown-item
+							a.faq__question.js-dropdown-item-link Что будет, если балансе полностью закончатся средства?
+							.faq__answer.js-dropdown-item-content Что будет, если балансе полностью закончатся средства?
+						.faq__item.js-dropdown-item
+							a.faq__question.js-dropdown-item-link Что будет, если балансе будет недостаточно средств для продления текущего тарифа?
+							.faq__answer.js-dropdown-item-content Что будет, если балансе будет недостаточно средств для продления текущего тарифа?
+						.faq__item.js-dropdown-item
+							a.faq__question.js-dropdown-item-link Почему мои вакансии пропадают?
+							.faq__answer.js-dropdown-item-content Почему мои вакансии пропадают?
+						.faq__item.js-dropdown-item
+							a.faq__question.js-dropdown-item-link Сколько можно пользоваться бесплатным аккаунтом?
+							.faq__answer.js-dropdown-item-content Сколько можно пользоваться бесплатным аккаунтом?
+						.faq__item.js-dropdown-item
+							a.faq__question.js-dropdown-item-link У меня на балансе есть деньги, и я пока хочу пользоваться бесплатным тарифом, что будет балансом, не сгорит ли он и возможно ли забрать деньги?
+							.faq__answer.js-dropdown-item-content У меня на балансе есть деньги, и я пока хочу пользоваться бесплатным тарифом, что будет балансом, не сгорит ли он и возможно ли забрать деньги?
+						.faq__item.js-dropdown-item
+							a.faq__question.js-dropdown-item-link Что будет если у Worki изменятся тарифы?
+							.faq__answer.js-dropdown-item-content Что будет если у Worki изменятся тарифы?
+						.faq__item.js-dropdown-item
+							a.faq__question.js-dropdown-item-link Мы приобрели VIP пакет на 30 дней и разместили вакансии только через 20 дней, получается что использовать все «вкусности» вашей системы мы сможем только 10 дней?
+							.faq__answer.js-dropdown-item-content Мы приобрели VIP пакет на 30 дней и разместили вакансии только через 20 дней, получается что использовать все «вкусности» вашей системы мы сможем только 10 дней?
+						.faq__info
+							| Не нашли интересующий ответ? Пишите на <a href="mailto:ak@worki.ru">ak@worki.ru</a>
+
+			.footer
+				.contentIn
+					h3.titleMain Найдите сотрудников быстро и бесплатно
+					h4.subtitleMain Разместите вакансии прямо сейчас и найдите работника за 24 часа или даже быстрее!
+					.footerButtons
+						a.footerButtons__button.linkButton.linkButton--red href="#" РАЗМЕСТИТЬ ВАКАНСИЮ
+						p.footerButtons__info или скачайте наше приложение
+						.footerButtons__apps.apps
+							a.apps__link.apps__link--google href="#"
+							a.apps__link.apps__link--apple href="#"
+
+
 
 		script src="../js/app.js"

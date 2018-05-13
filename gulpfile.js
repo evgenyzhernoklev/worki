@@ -9,7 +9,8 @@ var gulp = require('gulp'),
     rimraf = require('rimraf'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload,
-    slim = require("gulp-slim");
+    slim = require("gulp-slim"),
+    babel = require('gulp-babel');
 
 var path = {
     build: { //Тут мы укажем куда складывать готовые после сборки файлы
@@ -43,7 +44,7 @@ var config = {
     tunnel: true,
     host: 'localhost',
     port: 9000,
-    logPrefix: "Radar"
+    logPrefix: "Worki"
 };
 
 gulp.task('webserver', function () {
@@ -72,6 +73,9 @@ gulp.task('compile-js', function () {
     gulp.src(path.src.js) //Найдем наш main файл
         .pipe(rigger()) //Прогоним через rigger
         .pipe(sourcemaps.init()) //Инициализируем sourcemap
+        .pipe(babel({
+            presets: ['env']
+        }))
         .pipe(uglify()) //Сожмем наш js
         .pipe(sourcemaps.write()) //Пропишем карты
         .pipe(gulp.dest(path.build.js)) //Выплюнем готовый файл в build
