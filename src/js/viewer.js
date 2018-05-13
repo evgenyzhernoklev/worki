@@ -17,5 +17,9 @@ class Viewer {
     for (var element of menu) {
       new Menu(element);
     }
+
+    if (document.querySelectorAll('.js-tooltip-link').length) {
+      new Tooltips();
+    }
   }
 }
