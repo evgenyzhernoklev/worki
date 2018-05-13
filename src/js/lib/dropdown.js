@@ -11,6 +11,7 @@ class Dropdown {
   }
 
   updateDropdown(e) {
+    e.preventDefault();
     let target = e.target;
 
     if (target.classList.contains('js-dropdown-item-link')) {

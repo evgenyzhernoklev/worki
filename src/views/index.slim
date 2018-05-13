@@ -9,27 +9,27 @@ html
 	body
 		.contentWrapper
 
-			.menuContainer
-				.contentIn
+			.menuContainer.js-menu-container
+				.menuContainer__in.contentIn
 					a.menuContainer__logo href="/"
 					nav.menu
 						a.menu__link.menu__link--light href="#" Возможности
 						a.menu__link href="#" Тарифные планы
 						a.menu__link.linkButton.linkButton--gray href="#" Вход в кабинет
-				.menuScroll
-					.contentIn
+				.menuScroll.js-menu-scroll
+					.menuScroll__in.contentIn
 						a.menuScroll__logo href="/"
 						ul.menuBuy
 							li.menuBuy__item
-								a.menuBuy__link href="#" НАЧАТЬ
+								a.menuBuy__link.linkButton.linkButton--redTransparent href="#" НАЧАТЬ
 							li.menuBuy__item
-								a.menuBuy__link href="#" КУПИТЬ КОМФОРТ
+								a.menuBuy__link.linkButton.linkButton--red href="#" КУПИТЬ КОМФОРТ
 							li.menuBuy__item
-								a.menuBuy__link href="#" КУПИТЬ БИЗНЕС
+								a.menuBuy__link.linkButton.linkButton--red href="#" КУПИТЬ БИЗНЕС
 							li.menuBuy__item
-								a.menuBuy__link href="#" КУПИТЬ VIP
+								a.menuBuy__link.linkButton.linkButton--red href="#" КУПИТЬ VIP
 
-			.contentIn
+			.contentIn.js-menu-show
 				section.faqWrapper
 					h2.titleMain Вопросы и ответы
 					.faq.js-dropdown-container
