@@ -13,8 +13,8 @@ html
 				.menuContainer__in.contentIn
 					a.menuContainer__logo href="/"
 					nav.menu
-						a.menu__link.menu__link--light href="#" Возможности
-						a.menu__link href="#" Тарифные планы
+						a.menu__link.menu__link--light href="#faq" Возможности
+						a.menu__link href="#rates" Тарифные планы
 						a.menu__link.linkButton.linkButton--gray href="#" Вход в кабинет
 				.menuScroll.js-menu-scroll
 					.menuScroll__in.contentIn
@@ -29,43 +29,282 @@ html
 							li.menuBuy__item
 								a.menuBuy__link.linkButton.linkButton--red href="#" КУПИТЬ VIP
 
-			.contentIn.js-menu-show
-				section.ratesWrapper
+			.contentIn
+				section#rates.ratesWrapper
 					h1.titleMain Тарифные планы
 					.rates
-						.rates__header.ratesHeader
-							.ratesHeader__item.ratesHeaderItem.ratesHeaderItem--image
-								img.ratesHeaderItem__img src="../img/astronaut.png"
-							.ratesHeader__item.ratesHeaderItem
-								p.ratesHeaderItem__title Эконом
-								.ratesHeaderItem__price.ratesHeaderPrice
-									span.ratesHeaderPrice__amount 0
-									span.ratesHeaderPrice__currency &nbsp;&#8381;
-									p.ratesHeaderPrice__info в месяц
-								a.ratesHeaderItem__button.linkButton.linkButton--redTransparent href="#" НАЧАТЬ
-							.ratesHeader__item.ratesHeaderItem
-								p.ratesHeaderItem__title Комфорт
-								.ratesHeaderItem__price.ratesHeaderPrice
-									span.ratesHeaderPrice__amount 9 900
-									span.ratesHeaderPrice__currency &nbsp;&#8381;
-									p.ratesHeaderPrice__info в месяц
-								a.ratesHeaderItem__button.linkButton.linkButton--red href="#" КУПИТЬ
-							.ratesHeader__item.ratesHeaderItem
-								p.ratesHeaderItem__title Бизнес
-								.ratesHeaderItem__price.ratesHeaderPrice
-									span.ratesHeaderPrice__amount 59 900
-									span.ratesHeaderPrice__currency &nbsp;&#8381;
-									p.ratesHeaderPrice__info в месяц
-								a.ratesHeaderItem__button.linkButton.linkButton.linkButton--red href="#" КУПИТЬ
-							.ratesHeader__item.ratesHeaderItem
-								p.ratesHeaderItem__title VIP
-								.ratesHeaderItem__price.ratesHeaderPrice
-									span.ratesHeaderPrice__amount 149 900
-									span.ratesHeaderPrice__currency &nbsp;&#8381;
-									p.ratesHeaderPrice__info в месяц
-								a.ratesHeaderItem__button.linkButton.linkButton--red href="#" КУПИТЬ
+						.rates__cols.ratesCols
+							.ratesCols__item.ratesColsItem.ratesColsItem--special
+								img.ratesColsItem__img src="../img/astronaut.png"
+							.ratesCols__item.ratesColsItem
+								p.ratesColsItem__title Эконом
+								.ratesColsItem__price.ratesColsPrice
+									span.ratesColsPrice__amount 0
+									span.ratesColsPrice__currency &nbsp;&#8381;
+									p.ratesColsPrice__info в месяц
+								a.ratesColsItem__button.linkButton.linkButton--redTransparent href="#" НАЧАТЬ
+							.ratesCols__item.ratesColsItem
+								p.ratesColsItem__title Комфорт
+								.ratesColsItem__price.ratesColsPrice
+									span.ratesColsPrice__amount 9 900
+									span.ratesColsPrice__currency &nbsp;&#8381;
+									p.ratesColsPrice__info в месяц
+								a.ratesColsItem__button.linkButton.linkButton--red href="#" КУПИТЬ
+							.ratesCols__item.ratesColsItem
+								p.ratesColsItem__title Бизнес
+								.ratesColsItem__price.ratesColsPrice
+									span.ratesColsPrice__amount 59 900
+									span.ratesColsPrice__currency &nbsp;&#8381;
+									p.ratesColsPrice__info в месяц
+								a.ratesColsItem__button.linkButton.linkButton.linkButton--red href="#" КУПИТЬ
+							.ratesCols__item.ratesColsItem
+								p.ratesColsItem__title VIP
+								.ratesColsItem__price.ratesColsPrice
+									span.ratesColsPrice__amount 149 900
+									span.ratesColsPrice__currency &nbsp;&#8381;
+									p.ratesColsPrice__info в месяц
+								a.ratesColsItem__button.linkButton.linkButton--red href="#" КУПИТЬ
+						.rates__content.ratesContent.js-menu-show
+							.ratesContent__title Основные услуги
+							.rates__cols.ratesCols
+								.ratesCols__item.ratesColsItem.ratesColsItem--special
+									p.ratesColsItem__key Размещенные вакансии
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 5
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 25
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 175
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 250
+							.rates__cols.ratesCols
+								.ratesCols__item.ratesColsItem.ratesColsItem--special
+									p.ratesColsItem__key Просмотры резюме
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 10
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 500
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 1000
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value &infin;
+							.rates__cols.ratesCols
+								.ratesCols__item.ratesColsItem.ratesColsItem--special
+									p.ratesColsItem__key Поднятий выкансии
+									.ratesColsItem__tooltipContainer.tooltipContainer.js-tooltip-container
+										span.tooltipContainer__icon.js-tooltip-link
+										.tooltipContainer__tooltip.tooltip.js-tooltip-content
+											| Здесь будет какое-то короткое описание функции, чтобы стало понятно что это такое
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 1
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 10
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 40
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 100
+							.rates__cols.ratesCols
+								.ratesCols__item.ratesColsItem.ratesColsItem--special
+									p.ratesColsItem__key Выделения выкансии
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 0
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 10
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 20
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 50
+							.rates__cols.ratesCols
+								.ratesCols__item.ratesColsItem.ratesColsItem--special
+									p.ratesColsItem__key Вакансия сверх пакета
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 299 &#8381;
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 249 &#8381;
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 199 &#8381;
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 149 &#8381;
+							.rates__cols.ratesCols
+								.ratesCols__item.ratesColsItem.ratesColsItem--special
+									p.ratesColsItem__key Выделение сверх пакета
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 299 &#8381;
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 249 &#8381;
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 199 &#8381;
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 149 &#8381;
+							.rates__cols.ratesCols
+								.ratesCols__item.ratesColsItem.ratesColsItem--special
+									p.ratesColsItem__key Поднятие сверх пакета
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 299 &#8381;
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 249 &#8381;
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 199 &#8381;
+								.ratesCols__item.ratesColsItem
+									p.ratesColsItem__value 149 &#8381;
 
-				section.faqWrapper
+							.ratesContent__title
+								| Доступный функционал
+								.ratesContent__toggle
+							.rates__additional
+								.rates__cols.ratesCols
+									.ratesCols__item.ratesColsItem.ratesColsItem--special
+										p.ratesColsItem__key Геолокация вакансии
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+								.rates__cols.ratesCols
+									.ratesCols__item.ratesColsItem.ratesColsItem--special
+										p.ratesColsItem__key Чат с кандидатами
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+								.rates__cols.ratesCols
+									.ratesCols__item.ratesColsItem.ratesColsItem--special
+										p.ratesColsItem__key Доступ из мобильного приложения
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+								.rates__cols.ratesCols
+									.ratesCols__item.ratesColsItem.ratesColsItem--special
+										p.ratesColsItem__key Доступ с компьютера
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+								.rates__cols.ratesCols
+									.ratesCols__item.ratesColsItem.ratesColsItem--special
+										p.ratesColsItem__key Профиль компании
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+								.rates__cols.ratesCols
+									.ratesCols__item.ratesColsItem.ratesColsItem--special
+										p.ratesColsItem__key Push-уведомления
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+								.rates__cols.ratesCols
+									.ratesCols__item.ratesColsItem.ratesColsItem--special
+										p.ratesColsItem__key Возможность звонка из приложения
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+								.rates__cols.ratesCols
+									.ratesCols__item.ratesColsItem.ratesColsItem--special
+										p.ratesColsItem__key Фильтр по кандидатам и откликам
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+								.rates__cols.ratesCols
+									.ratesCols__item.ratesColsItem.ratesColsItem--special
+										p.ratesColsItem__key Скрыть свой номер
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+									.ratesCols__item.ratesColsItem
+										span.ratesColsItem__ok
+
+							.rates__cols.ratesCols
+								.ratesCols__item.ratesColsItem.ratesColsItem--special
+									p.ratesColsItem__key E-mail уведомления с откликами и статистикой
+								.ratesCols__item.ratesColsItem
+									span.ratesColsItem__ok
+								.ratesCols__item.ratesColsItem
+									span.ratesColsItem__ok
+								.ratesCols__item.ratesColsItem
+									span.ratesColsItem__ok
+								.ratesCols__item.ratesColsItem
+									span.ratesColsItem__ok
+							.rates__cols.ratesCols
+								.ratesCols__item.ratesColsItem.ratesColsItem--special
+									p.ratesColsItem__key Техподдержка
+								.ratesCols__item.ratesColsItem
+								.ratesCols__item.ratesColsItem
+									span.ratesColsItem__ok
+								.ratesCols__item.ratesColsItem
+									span.ratesColsItem__ok
+								.ratesCols__item.ratesColsItem
+									span.ratesColsItem__ok
+							.rates__cols.ratesCols
+								.ratesCols__item.ratesColsItem.ratesColsItem--special
+									p.ratesColsItem__key Объединение в отдел
+								.ratesCols__item.ratesColsItem
+								.ratesCols__item.ratesColsItem
+									span.ratesColsItem__ok
+								.ratesCols__item.ratesColsItem
+									span.ratesColsItem__ok
+								.ratesCols__item.ratesColsItem
+									span.ratesColsItem__ok
+							.rates__cols.ratesCols
+								.ratesCols__item.ratesColsItem.ratesColsItem--special
+									p.ratesColsItem__key Загрузка вакансий пакетами через Excel
+								.ratesCols__item.ratesColsItem
+								.ratesCols__item.ratesColsItem
+								.ratesCols__item.ratesColsItem
+									span.ratesColsItem__ok
+								.ratesCols__item.ratesColsItem
+									span.ratesColsItem__ok
+							.rates__cols.ratesCols
+								.ratesCols__item.ratesColsItem.ratesColsItem--special
+									p.ratesColsItem__key Обучение команды подбора (вебинар)
+								.ratesCols__item.ratesColsItem
+								.ratesCols__item.ratesColsItem
+								.ratesCols__item.ratesColsItem
+									span.ratesColsItem__ok
+								.ratesCols__item.ratesColsItem
+									span.ratesColsItem__ok
+
+
+
+				section#faq.faqWrapper
 					h2.titleMain Вопросы и ответы
 					.faq.js-dropdown-container
 						.faq__item.js-dropdown-item

@@ -1,5 +1,5 @@
 .ratesWrapper {
-
+  margin: 40px 0 30px;
 }
 
 .rates {
@@ -10,28 +10,18 @@
 
 
 
-.ratesHeader {
+.ratesCols {
   display: flex;
 }
 
-.ratesHeaderItem {
+.ratesColsItem {
   position: relative;
   flex-basis: 190px;
   flex-shrink: 0;
-
-  &--image {
-    flex-basis: calc(100% - 760px);
-  }
-}
-
-.ratesHeaderItem__img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-}
-
-.ratesHeaderItem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   text-align: center;
   border-left: 1px solid #DFDFDF;
@@ -40,31 +30,92 @@
   &:nth-child(2) {
     border-left: 0;
   }
+
+  &--special {
+    flex-basis: calc(100% - 760px);
+  }
 }
-.ratesHeaderItem__title {
+
+.ratesColsItem__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.ratesColsItem__title {
+  flex-basis: 100%;
   margin-bottom: 78px;
   font: 16px/25px $sans-semibold;
 }
 
-.ratesHeaderPrice {
+.ratesColsItem__key {
+
+}
+
+.ratesColsItem__value {
+  font: 14px/20px $sans-bold;
+}
+
+.ratesColsPrice {
+  flex-basis: 100%;
   margin-bottom: 72px;
 }
 
-.ratesHeaderPrice__amount {
+.ratesColsPrice__amount {
   font: 26px/32px $sans-bold;
 }
 
-.ratesHeaderPrice__currency {
+.ratesColsPrice__currency {
   font: 26px/32px $sans-regular;
   color: #B1B1B1;
 }
 
-.ratesHeaderPrice__info {
+.ratesColsPrice__info {
   font: 12px/18px $sans-semibold;
   text-transform: uppercase;
   color: #B1B1B1;
 }
 
-.ratesHeaderItem__button {
+.ratesColsItem__button {
   width: 100%;
+}
+
+.ratesColsItem__tooltipContainer {
+  position: absolute;
+  top: 21px;
+  right: 15px;
+}
+
+.ratesColsItem__ok {
+  @include background-image(ok, 28px, 20px);
+}
+
+
+
+.ratesContent {
+  .ratesCols {
+    border-top: 1px solid #EDEDED;
+  }
+
+  .ratesColsItem {
+    &:nth-child(1) {
+      text-align: left;
+      justify-content: left;
+    }
+
+    &:nth-child(2) {
+      border-left: 1px solid #DFDFDF;
+    }
+  }
+
+  .ratesColsItem--special {
+    padding-right: 40px;
+  }
+}
+
+.ratesContent__title {
+  padding: 20px 25px 18px;
+  font: 18px/25px $sans-bold;
+  background-color: #F5F5F5;
 }

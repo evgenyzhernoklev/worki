@@ -1,0 +1,38 @@
+.tooltipContainer {
+
+}
+
+.tooltipContainer__icon {
+  cursor: pointer;
+  @include background-image(info_gray, 20px, 20px);
+}
+
+.tooltip {
+  padding: 15px 20px;
+  color: #4C4C4C;
+  background: $white;
+  box-shadow: 5px -5px 15px 0 rgba(0,0,0,0.20);
+  border-radius: 5px;
+}
+
+
+
+.js-tooltip-container {
+
+}
+
+.js-tooltip-link {
+  cursor: pointer;
+}
+
+.js-tooltip-content {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  @include hide();
+
+  &.is-active {
+    @include show();
+  }
+}
