@@ -1,18 +1,22 @@
-$white:         #fff;
-$black:         #000;
+$white:               #ffffff;
+$red:                 #F15F79;
+$black:               #000000;
 
 
 
 // animation
-$transition-normal: .3s linear;
-$transition-fast: .1s linear;
+$transition-normal:   .3s linear;
+$transition-fast:     .1s linear;
 
 
 
 // fonts
-
+$sans-regular:        'open_sans_regular', sans-serif;
+$sans-semibold:       'open_sans_semibold', sans-serif;
+$sans-bold:           'open_sans_bold', sans-serif;
+$sans-extrabold:      'open_sans_extrabold', sans-serif;
 
 
 // screen resolutions
-$tablet: 'max-width: 992px';
-$mobile: 'max-width: 767px';
+$tablet:              'max-width: 992px';
+$mobile:              'max-width: 767px';
