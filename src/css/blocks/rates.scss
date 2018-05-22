@@ -86,6 +86,13 @@
   @include background-image(ok, 28px, 20px);
 }
 
+.ratesColsItem__content {
+  display: none;
+  flex-basis: 100%;
+  margin: 40px 0 0;
+  text-align: left;
+}
+
 @media (max-width: 1200px) {
   .ratesColsItem {
     &--header {
@@ -127,9 +134,11 @@
   .ratesColsItem__button {
     max-width: 240px;
   }
+
+  .ratesColsItem__content {
+    display: block;
+  }
 }
-
-
 
 
 
@@ -187,4 +196,52 @@
   padding: 20px 25px 18px;
   font: 18px/25px $sans-bold;
   background-color: #F5F5F5;
+}
+
+.ratesContent__hidden {
+  display: none;
+  border-top: 1px solid #EDEDED;
+}
+
+
+
+.ratesInfo {
+
+}
+
+.ratesInfo__item {
+  position: relative;
+  padding: 19px 70px 19px 25px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #EDEDED;
+  }
+
+  &--ok {
+    padding: 19px 25px 19px 70px;
+
+    &:before {
+      content: '';
+      @include background-image(ok, 28px, 20px);
+      position: absolute;
+      top: 21px;
+      left: 25px;
+    }
+  }
+}
+
+.ratesInfo__title {
+
+}
+
+.ratesInfo__value {
+  position: absolute;
+  top: 19px;
+  right: 25px;
+  font-family: $sans-bold;
+  text-align: right;
+}
+
+.ratesInfo__currency {
+
 }
