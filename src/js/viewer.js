@@ -8,14 +8,16 @@ class Viewer {
   }
 
   initClasses() {
-    let dropdowns = document.querySelectorAll('.js-dropdown-container');
-    for (var element of dropdowns) {
+    for (var element of document.querySelectorAll('.js-dropdown-container')) {
       new Dropdown(element);
     }
 
-    let menu = document.querySelectorAll('.js-menu-container');
-    for (var element of menu) {
+    for (var element of document.querySelectorAll('.js-menu-container')) {
       new Menu(element);
+    }
+
+    for (var element of document.querySelectorAll('.js-slideToggle-container')) {
+      new SlideToggle(element);
     }
 
     if (document.querySelectorAll('.js-tooltip-link').length) {

@@ -43,7 +43,7 @@ html
 									p.ratesColsPrice__info в месяц
 								a.ratesColsItem__button.linkButton.linkButton--redTransparent href="#" НАЧАТЬ
 
-								.ratesColsItem__content.ratesContent.js-toggle-container
+								.ratesColsItem__content.ratesContent.js-toggle-container.js-slideToggle-container
 									.ratesContent__title Основные услуги
 									.ratesContent__info.ratesInfo
 										.ratesInfo__item
@@ -77,19 +77,17 @@ html
 											.ratesInfo__value
 												| 299
 												span.ratesInfo__currency &nbsp;&#8381;
-
 									.ratesContent__title
 										| Доступный функционал
-										.ratesContent__toggle
+										.ratesContent__toggle.forDesktopTablet
 											.toggler
 												span.toggler__info Показать всё
 												span.toggler__link.js-toggle-link
-
 									.ratesContent__infoWrapper.ratesInfoWrapper
 										.ratesContent__info.ratesInfo
 											.ratesInfo__item.ratesInfo__item--ok
 												p.ratesInfo__title E-mail уведомления с откликами и статистикой
-										.ratesContent__hidden.js-toggle-content
+										.ratesContent__hidden.js-toggle-content.js-slideToggle-content
 											.ratesInfo__item.ratesInfo__item--ok
 												p.ratesInfo__title Геолокация вакансии
 											.ratesInfo__item.ratesInfo__item--ok
@@ -108,6 +106,7 @@ html
 												p.ratesInfo__title Фильтр по кандидатам и откликам
 											.ratesInfo__item.ratesInfo__item--ok
 												p.ratesInfo__title Скрыть свой номер
+										span.ratesContent__button.forMobile.js-slideToggle-button ПОКАЗАТЬ ВСЕ
 
 							.ratesCols__item.ratesColsItem
 								p.ratesColsItem__title Комфорт
