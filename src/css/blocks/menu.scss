@@ -69,6 +69,16 @@
   @include background-image(logo_worki, 101px, 36px);
 }
 
+@media ($tablet) {
+  .menuScroll {
+    display: none;
+
+    &.is-active {
+      display: none;
+    }
+  }
+}
+
 
 
 .menuBuy {

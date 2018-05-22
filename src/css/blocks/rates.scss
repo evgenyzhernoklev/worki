@@ -12,6 +12,12 @@
   display: none;
 }
 
+@media ($tablet) {
+  .rates {
+    box-shadow: none;
+  }
+}
+
 
 
 .ratesCols {
@@ -66,26 +72,6 @@
   font: 14px/20px $sans-bold;
 }
 
-.ratesColsPrice {
-  flex-basis: 100%;
-  margin-bottom: 72px;
-}
-
-.ratesColsPrice__amount {
-  font: 26px/32px $sans-bold;
-}
-
-.ratesColsPrice__currency {
-  font: 26px/32px $sans-regular;
-  color: #B1B1B1;
-}
-
-.ratesColsPrice__info {
-  font: 12px/18px $sans-semibold;
-  text-transform: uppercase;
-  color: #B1B1B1;
-}
-
 .ratesColsItem__button {
   width: 100%;
 }
@@ -107,6 +93,69 @@
         display: none;
       }
     }
+  }
+}
+
+@media ($tablet) {
+  .ratesCols {
+    flex-wrap: wrap;
+  }
+
+  .ratesColsItem {
+    flex-basis: 100%;
+    margin: 0 0 30px;
+    padding: 31px 0 0;
+    background: $white;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.10);
+    border-radius: 5px;
+    overflow: hidden;
+
+    &--special {
+      flex-basis: 100%;
+    }
+
+    &.forDesktop {
+      display: none;
+    }
+  }
+
+  .ratesColsItem__title {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+
+  .ratesColsItem__button {
+    max-width: 240px;
+  }
+}
+
+
+
+
+
+.ratesColsPrice {
+  flex-basis: 100%;
+  margin-bottom: 72px;
+}
+
+.ratesColsPrice__amount {
+  font: 26px/32px $sans-bold;
+}
+
+.ratesColsPrice__currency {
+  font: 26px/32px $sans-regular;
+  color: #B1B1B1;
+}
+
+.ratesColsPrice__info {
+  font: 12px/18px $sans-semibold;
+  text-transform: uppercase;
+  color: #B1B1B1;
+}
+
+@media ($tablet) {
+  .ratesColsPrice {
+    margin-bottom: 37px;
   }
 }
 
