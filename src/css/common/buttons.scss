@@ -41,3 +41,13 @@
     background-color: $red;
   }
 }
+
+.linkButton--transparent {
+  color: $black;
+  background-color: transparent;
+  border: 1px solid rgba(0,0,0, 0.3);
+
+  &:hover {
+    background-color: $white;
+  }
+}

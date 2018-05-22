@@ -38,6 +38,11 @@
   &--special {
     flex-basis: calc(100% - 760px);
   }
+
+  &--header {
+    background: url('../img/moon.png') no-repeat bottom right;
+    background-size: cover;
+  }
 }
 
 .ratesColsItem__img {
@@ -93,6 +98,16 @@
 
 .ratesColsItem__ok {
   @include background-image(ok, 28px, 20px);
+}
+
+@media (max-width: 1200px) {
+  .ratesColsItem {
+    &--header {
+      .ratesColsItem__img {
+        display: none;
+      }
+    }
+  }
 }
 
 

@@ -34,7 +34,7 @@ html
 					h1.titleMain Тарифные планы
 					.rates
 						.rates__cols.ratesCols
-							.ratesCols__item.ratesColsItem.ratesColsItem--special
+							.ratesCols__item.ratesColsItem.ratesColsItem--special.ratesColsItem--header
 								img.ratesColsItem__img src="../img/astronaut.png"
 							.ratesCols__item.ratesColsItem
 								p.ratesColsItem__title Эконом
@@ -351,7 +351,7 @@ html
 
 
 
-				section#faq.faqWrapper
+				section#faq.faqWrapper.forDesktopTablet
 					h2.titleMain Вопросы и ответы
 					.faq.js-dropdown-container
 						.faq__item.js-dropdown-item
@@ -429,11 +429,10 @@ html
 						h4.subtitleMain Разместите вакансии прямо сейчас и найдите работника за 24 часа или даже быстрее!
 						.footerButtons
 							a.footerButtons__button.linkButton.linkButton--red href="#" РАЗМЕСТИТЬ ВАКАНСИЮ
-							p.footerButtons__info или скачайте наше приложение
-							.footerButtons__apps.apps
+							a.footerButtons__button.footerButtons__button--mobile.linkButton.linkButton--transparent href="#" СКАЧАТЬ ПРИЛОЖЕНИЕ
+							p.footerButtons__info.forDesktopTablet или скачайте наше приложение
+							.footerButtons__apps.apps.forDesktopTablet
 								a.apps__link.apps__link--google href="#"
 								a.apps__link.apps__link--apple href="#"
-
-
 
 		script src="../js/app.js"

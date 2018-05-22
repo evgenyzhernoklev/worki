@@ -13,6 +13,16 @@
   margin-bottom: 35px;
 }
 
+@media ($mobile) {
+  .footer {
+    padding: 36px 0 58px;
+  }
+
+  .footer__title {
+    margin-bottom: 19px;
+  }
+}
+
 
 
 .footerButtons {
@@ -24,11 +34,32 @@
   font-size: 15px;
   line-height: 65px;
   padding: 0 35px;
+
+  &--mobile {
+    display: none;
+  }
 }
 
 .footerButtons__info {
   margin: 26px 0 32px;
   font-size: 16px;
+}
+
+@media ($mobile) {
+  .footerButtons__button {
+    display: block;
+    margin: 0 auto 10px;
+    padding: 0 20px;
+    max-width: 320px;
+    height: 50px;
+    font-size: 13px;
+    line-height: 50px;
+  }
+
+  &--mobile {
+    display: block;
+    line-height: 48px;
+  }
 }
 
 
