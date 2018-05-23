@@ -8,12 +8,34 @@
     <link href="../css/app.css" media="all" rel="stylesheet" />
   </head>
   <body>
-    <div class="contentWrapper">
-      <div class="menuContainer js-menu-container">
+    <div class="contentWrapper js-menu-container">
+      <div class="menuMobile">
+        <div class="menuMobile__in contentIn">
+          <a class="menuMobile__logo icon icon--logo" href="/"></a>
+          <div class="hamburger js-menu-mobile-toggle">
+            <span class="hamburger__strips"></span>
+          </div>
+          <div class="menuMobile__menu js-menu-mobile">
+            <div class="menuMobile__item">
+              <a class="menuMobile__link menuMobile__link--special js-menu-link-scroll" href="#rates">Тарифные планы</a>
+            </div>
+            <div class="menuMobile__item">
+              <a class="menuMobile__link" href="#">Вход в кабинет</a>
+            </div>
+            <div class="menuMobile__item">
+              <a class="menuMobile__link" href="#">Разместить вакансию</a>
+            </div>
+            <div class="menuMobile__item">
+              <a class="menuMobile__link" href="#">Скачать приложение</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menuContainer">
         <div class="menuContainer__in contentIn">
-          <a class="menuContainer__logo" href="/"></a>
+          <a class="menuContainer__logo icon icon--logo" href="/"></a>
           <nav class="menu">
-            <a class="menu__link menu__link--light js-menu-link-scroll" href="#faq">Возможности</a><a class="menu__link js-menu-link-scroll" href="#rates">Тарифные планы</a><a class="menu__link linkButton linkButton--gray" href="#">Вход в кабинет</a>
+            <a class="menu__link menu__link--light js-menu-link-scroll" href="#faq">Возможности</a><a class="menu__link js-menu-link-scroll js-menu-link-scroll-no-menu" href="#rates">Тарифные планы</a><a class="menu__link linkButton linkButton--gray" href="#">Вход в кабинет</a>
           </nav>
         </div>
         <div class="menuScroll js-menu-scroll">

@@ -1,5 +1,6 @@
 .ratesWrapper {
-  margin: 40px 0 38px;
+  margin: 20px 0 38px;
+  padding-top: 20px;
 }
 
 .rates {
@@ -24,6 +25,12 @@
 
   .rates {
     box-shadow: none;
+  }
+}
+
+@media ($mobile) {
+  .ratesWrapper {
+    margin-top: 80px;
   }
 }
 

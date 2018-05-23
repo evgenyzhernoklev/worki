@@ -5,3 +5,13 @@
 .icon {
   vertical-align: middle;
 }
+
+.icon--logo {
+  @include background-image(logo_worki, 134px, 48px);
+}
+
+@media ($mobile) {
+  .icon--logo {
+    @include background-image(logo_worki, 112px, 40px);
+  }
+}

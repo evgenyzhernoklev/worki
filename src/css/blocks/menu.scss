@@ -9,7 +9,13 @@
 }
 
 .menuContainer__logo {
-  @include background-image(logo_worki, 134px, 48px);
+
+}
+
+@media ($mobile) {
+  .menuContainer {
+    display: none;
+  }
 }
 
 

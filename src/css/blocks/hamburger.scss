@@ -1,0 +1,74 @@
+.hamburger {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  top: 17px;
+  right: 20px;
+  padding: 0;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  text-indent: -9999px;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.is-active {
+    .hamburger__strips {
+      background: none;
+
+      &:before {
+        top: 0;
+        transform: rotate(45deg);
+        transition: top 0.3s 0s, transform 0.3s 0.3s;
+      }
+
+      &:after {
+        bottom: 0;
+        transform: rotate(-45deg);
+        transition: bottom 0.3s 0s, transform 0.3s 0.3s;
+      }
+    }
+  }
+}
+
+.hamburger__strips {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: $red;
+  transition: background-color 0s 0.3s;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $red;
+  }
+
+  &:before {
+    top: -6px;
+    transition: top 0.3s 0.3s, transform 0.3s 0s;
+  }
+
+  &:after {
+    bottom: -6px;
+    transition: bottom 0.3s 0.3s, transform 0.3s 0s;
+  }
+}
+
+@media ($tablet) {
+  .hamburger {
+    display: inline-block;
+    z-index: 21;
+  }
+}

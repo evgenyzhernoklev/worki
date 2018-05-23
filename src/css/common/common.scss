@@ -11,6 +11,14 @@ a {
   cursor: pointer;
 }
 
+@media ($mobile) {
+  body {
+    &.menu-opened {
+      overflow: hidden;
+    }
+  }
+}
+
 
 
 // helpers

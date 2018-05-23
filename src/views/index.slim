@@ -7,13 +7,28 @@ html
 		meta name="description" content=""
 		link rel="stylesheet" media="all" href="../css/app.css"
 	body
-		.contentWrapper
-			.menuContainer.js-menu-container
+		.contentWrapper.js-menu-container
+			.menuMobile
+				.menuMobile__in.contentIn
+					a.menuMobile__logo.icon.icon--logo href="/"
+					.hamburger.js-menu-mobile-toggle
+						span.hamburger__strips
+					.menuMobile__menu.js-menu-mobile
+						.menuMobile__item
+							a.menuMobile__link.menuMobile__link--special.js-menu-link-scroll href="#rates" Тарифные планы
+						.menuMobile__item
+							a.menuMobile__link href="#" Вход в кабинет
+						.menuMobile__item
+							a.menuMobile__link href="#" Разместить вакансию
+						.menuMobile__item
+							a.menuMobile__link href="#" Скачать приложение
+
+			.menuContainer
 				.menuContainer__in.contentIn
-					a.menuContainer__logo href="/"
+					a.menuContainer__logo.icon.icon--logo href="/"
 					nav.menu
 						a.menu__link.menu__link--light.js-menu-link-scroll href="#faq" Возможности
-						a.menu__link.js-menu-link-scroll href="#rates" Тарифные планы
+						a.menu__link.js-menu-link-scroll.js-menu-link-scroll-no-menu href="#rates" Тарифные планы
 						a.menu__link.linkButton.linkButton--gray href="#" Вход в кабинет
 				.menuScroll.js-menu-scroll
 					.menuScroll__in.contentIn
