@@ -9,10 +9,19 @@
 }
 
 .rates__additional {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+
+  &.is-active {
+    max-height: none;
+  }
 }
 
 @media ($tablet) {
+  .ratesWrapper {
+    margin-bottom: 0;
+  }
+
   .rates {
     box-shadow: none;
   }
@@ -203,7 +212,8 @@
   max-height: 0;
   overflow: hidden;
 
-  &.is-active-sliding {
+  &.is-active {
+    max-height: none;
     border-top: 1px solid #EDEDED;
   }
 }
@@ -230,6 +240,10 @@
 }
 
 @media ($mobile) {
+  .ratesContent__title {
+    font-size: 16px;
+  }
+
   .ratesContent__button {
     &.forMobile {
       display: block;

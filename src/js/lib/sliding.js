@@ -17,14 +17,14 @@ class SlideToggle {
     let buttonClassList = this.button.classList,
         contentClassList = this.content.classList;
 
-    if (buttonClassList.contains('is-active-sliding')) {
-      contentClassList.remove('is-active-sliding');
-      buttonClassList.remove('is-active-sliding');
+    if (buttonClassList.contains('is-active')) {
+      contentClassList.remove('is-active');
+      buttonClassList.remove('is-active');
       this.button.textContent = 'показать все';
       slideUp(this.content);
     } else {
-      contentClassList.add('is-active-sliding');
-      buttonClassList.add('is-active-sliding');
+      contentClassList.add('is-active');
+      buttonClassList.add('is-active');
       this.button.textContent = 'скрыть';
       slideDown(this.content);
     }

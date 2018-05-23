@@ -8,19 +8,23 @@ class Toggle {
   }
 
   toggleSwitch(e) {
-    let target = e.target;
+    let target = e.target,
+        targetClassList = target.classList;
 
-    if (target.classList.contains('js-toggle-link')) {
+    if (targetClassList.contains('js-toggle-link')) {
       e.preventDefault();
       let parent = target.closest('.js-toggle-container'),
-          content = parent.querySelector('.js-toggle-content');
+          content = parent.querySelector('.js-toggle-content'),
+          contentClassList = content.classList;
 
-      if (target.classList.contains('is-active')) {
-        target.classList.remove('is-active');
-        content.style.display = 'none';
+      if (targetClassList.contains('is-active')) {
+        targetClassList.remove('is-active');
+        contentClassList.remove('is-active');
+        content.style.maxHeight = '0';
       } else {
-        target.classList.add('is-active');
-        content.style.display = 'block';
+        targetClassList.add('is-active');
+        contentClassList.add('is-active');
+        content.style.maxHeight = 'none';
       }
     }
   }
